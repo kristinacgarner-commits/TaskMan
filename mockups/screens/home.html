@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskMan — Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-violet-50 font-sans">
+<div class="max-w-sm mx-auto min-h-screen flex flex-col relative overflow-hidden bg-violet-50">
+
+  <!-- Gradient header blob -->
+  <div class="absolute top-0 left-0 right-0 h-52 bg-gradient-to-br from-violet-500 to-purple-600 rounded-b-[3rem]"></div>
+
+  <!-- Header -->
+  <header class="relative z-10 px-5 pt-12 pb-5">
+    <div class="flex items-center justify-between mb-5">
+      <div>
+        <p class="text-violet-200 text-sm font-medium">Good morning! 🌸</p>
+        <h1 class="text-white text-2xl font-extrabold tracking-tight">Hey, Bean!</h1>
+      </div>
+      <div class="w-12 h-12 rounded-full bg-white/25 border-2 border-white/60 flex items-center justify-center">
+        <span class="text-white font-extrabold text-base">BJ</span>
+      </div>
+    </div>
+
+    <!-- Progress card -->
+    <div class="bg-white rounded-3xl p-4 shadow-md shadow-purple-200">
+      <div class="flex items-center justify-between mb-2">
+        <p class="text-sm font-bold text-gray-700">Today's progress</p>
+        <p class="text-sm font-extrabold text-violet-600">1 / 4 done</p>
+      </div>
+      <div class="h-3 bg-violet-100 rounded-full overflow-hidden">
+        <div class="h-full bg-gradient-to-r from-violet-400 to-purple-500 rounded-full" style="width:25%"></div>
+      </div>
+      <p class="text-xs text-gray-400 mt-2">3 chores to go — you've got this! 💪</p>
+    </div>
+  </header>
+
+  <!-- Task list -->
+  <main class="relative z-10 flex-1 px-5 py-2 space-y-5 pb-28 overflow-y-auto">
+
+    <!-- Your Chores -->
+    <section>
+      <h2 class="text-xs font-extrabold text-violet-500 uppercase tracking-widest mb-3">✨ Your chores</h2>
+      <div class="space-y-3">
+
+        <!-- Overdue -->
+        <a href="task-detail.html" class="flex items-center gap-3 bg-white rounded-3xl p-4 shadow-sm border-2 border-red-200">
+          <div class="w-12 h-12 rounded-2xl bg-red-100 flex items-center justify-center text-2xl flex-shrink-0">🛒</div>
+          <div class="flex-1 min-w-0">
+            <p class="font-bold text-gray-800 text-sm">Grocery shopping</p>
+            <p class="text-xs text-red-500 font-semibold flex items-center gap-1 mt-0.5">
+              <i data-lucide="alert-circle" class="w-3 h-3"></i> Overdue — was due yesterday!
+            </p>
+          </div>
+          <div class="w-6 h-6 rounded-full border-2 border-red-400 flex-shrink-0"></div>
+        </a>
+
+        <!-- Due today -->
+        <a href="task-detail.html" class="flex items-center gap-3 bg-white rounded-3xl p-4 shadow-sm border border-violet-100">
+          <div class="w-12 h-12 rounded-2xl bg-violet-100 flex items-center justify-center text-2xl flex-shrink-0">🧹</div>
+          <div class="flex-1 min-w-0">
+            <p class="font-bold text-gray-800 text-sm">Vacuum living room</p>
+            <p class="text-xs text-gray-400 flex items-center gap-1 mt-0.5">
+              <i data-lucide="clock" class="w-3 h-3"></i> Due today
+            </p>
+          </div>
+          <div class="w-6 h-6 rounded-full border-2 border-violet-400 flex-shrink-0"></div>
+        </a>
+
+        <!-- Due tomorrow -->
+        <a href="task-detail.html" class="flex items-center gap-3 bg-white rounded-3xl p-4 shadow-sm border border-violet-100">
+          <div class="w-12 h-12 rounded-2xl bg-pink-100 flex items-center justify-center text-2xl flex-shrink-0">🧺</div>
+          <div class="flex-1 min-w-0">
+            <p class="font-bold text-gray-800 text-sm">Do laundry</p>
+            <p class="text-xs text-gray-400 flex items-center gap-1 mt-0.5">
+              <i data-lucide="clock" class="w-3 h-3"></i> Due tomorrow
+            </p>
+          </div>
+          <div class="w-6 h-6 rounded-full border-2 border-violet-400 flex-shrink-0"></div>
+        </a>
+
+        <!-- Done -->
+        <div class="flex items-center gap-3 bg-white rounded-3xl p-4 opacity-50">
+          <div class="w-12 h-12 rounded-2xl bg-green-100 flex items-center justify-center text-2xl flex-shrink-0">🍽️</div>
+          <div class="flex-1 min-w-0">
+            <p class="font-bold text-gray-400 text-sm line-through">Wash dishes</p>
+            <p class="text-xs text-green-500 flex items-center gap-1 mt-0.5">
+              <i data-lucide="check-circle" class="w-3 h-3"></i> Completed!
+            </p>
+          </div>
+          <div class="w-6 h-6 rounded-full bg-green-400 border-2 border-green-400 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="check" class="w-3 h-3 text-white"></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Up for Grabs -->
+    <section>
+      <h2 class="text-xs font-extrabold text-amber-500 uppercase tracking-widest mb-1">🎁 Up for grabs</h2>
+      <p class="text-xs text-gray-400 mb-3">Tap "Claim" to add to your list</p>
+      <div class="space-y-3">
+
+        <div class="flex items-center gap-3 bg-amber-50 rounded-3xl p-4 border border-amber-200">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center text-2xl flex-shrink-0">🗑️</div>
+          <div class="flex-1 min-w-0">
+            <p class="font-bold text-gray-700 text-sm">Take out trash</p>
+            <p class="text-xs text-amber-500 mt-0.5">Due today · Unclaimed</p>
+          </div>
+          <button class="bg-amber-400 text-white text-xs font-extrabold px-4 py-2 rounded-2xl flex-shrink-0 shadow-sm">Claim</button>
+        </div>
+
+        <div class="flex items-center gap-3 bg-amber-50 rounded-3xl p-4 border border-amber-200">
+          <div class="w-12 h-12 rounded-2xl bg-green-100 flex items-center justify-center text-2xl flex-shrink-0">🌿</div>
+          <div class="flex-1 min-w-0">
+            <p class="font-bold text-gray-700 text-sm">Water the plants</p>
+            <p class="text-xs text-amber-500 mt-0.5">Due 20 Apr · Unclaimed</p>
+          </div>
+          <button class="bg-amber-400 text-white text-xs font-extrabold px-4 py-2 rounded-2xl flex-shrink-0 shadow-sm">Claim</button>
+        </div>
+
+        <div class="flex items-center gap-3 bg-amber-50 rounded-3xl p-4 border border-amber-200">
+          <div class="w-12 h-12 rounded-2xl bg-blue-100 flex items-center justify-center text-2xl flex-shrink-0">🪟</div>
+          <div class="flex-1 min-w-0">
+            <p class="font-bold text-gray-700 text-sm">Wipe windows</p>
+            <p class="text-xs text-amber-500 mt-0.5">Due 21 Apr · Unclaimed</p>
+          </div>
+          <button class="bg-amber-400 text-white text-xs font-extrabold px-4 py-2 rounded-2xl flex-shrink-0 shadow-sm">Claim</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bottom nav -->
+  <nav class="absolute bottom-0 left-0 right-0 bg-white border-t border-gray-100 flex items-center justify-around px-4 py-3">
+    <button class="flex flex-col items-center gap-1 text-violet-600">
+      <i data-lucide="home" class="w-5 h-5"></i>
+      <span class="text-xs font-bold">Home</span>
+    </button>
+    <a href="calendar.html" class="flex flex-col items-center gap-1 text-gray-400">
+      <i data-lucide="calendar" class="w-5 h-5"></i>
+      <span class="text-xs">Calendar</span>
+    </a>
+    <a href="add-task.html" class="w-14 h-14 -mt-7 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg shadow-violet-300 flex-shrink-0">
+      <i data-lucide="plus" class="w-7 h-7 text-white"></i>
+    </a>
+    <button class="flex flex-col items-center gap-1 text-gray-400">
+      <i data-lucide="users" class="w-5 h-5"></i>
+      <span class="text-xs">Family</span>
+    </button>
+    <button class="flex flex-col items-center gap-1 text-gray-400">
+      <i data-lucide="user" class="w-5 h-5"></i>
+      <span class="text-xs">Me</span>
+    </button>
+  </nav>
+
+</div>
+
+<div class="max-w-sm mx-auto mt-4 text-center">
+  <a href="../index.html" class="text-xs text-gray-400 hover:text-gray-600">← Back to index</a>
+</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>
