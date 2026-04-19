@@ -1,0 +1,52 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link [ref=e4] [cursor=pointer]:
+        - /url: home.html
+        - img [ref=e5]
+      - generic [ref=e8]: Task Detail
+      - button [ref=e9] [cursor=pointer]:
+        - img [ref=e10]
+    - main [ref=e16]:
+      - heading "Submit quarterly report" [level=2] [ref=e19]
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - img [ref=e22]
+          - text: High Priority
+        - generic [ref=e24]:
+          - img [ref=e25]
+          - text: Finance
+      - generic [ref=e27]:
+        - img [ref=e28]
+        - generic [ref=e35]:
+          - paragraph [ref=e36]: Due date
+          - paragraph [ref=e37]: 17 Apr 2026 · Overdue by 1 day
+      - generic [ref=e38]:
+        - paragraph [ref=e39]: Description
+        - paragraph [ref=e40]: Compile all department financials for Q1 and format into the board-facing slide deck. Include revenue, burn, and headcount summaries. Coordinate with Sales and Ops for sign-off before submission.
+      - generic [ref=e41]:
+        - paragraph [ref=e42]: Checklist 2 / 4
+        - list [ref=e43]:
+          - listitem [ref=e44]:
+            - img [ref=e46]
+            - generic [ref=e48]: Gather sales figures
+          - listitem [ref=e49]:
+            - img [ref=e51]
+            - generic [ref=e53]: Review burn rate with CFO
+          - listitem [ref=e54]:
+            - generic [ref=e56]: Build slide deck
+          - listitem [ref=e57]:
+            - generic [ref=e59]: Send for sign-off
+      - generic [ref=e60]:
+        - paragraph [ref=e61]: Attachments
+        - generic [ref=e62]:
+          - img [ref=e63]
+          - generic [ref=e69]:
+            - paragraph [ref=e70]: Q1_financials_draft.xlsx
+            - paragraph [ref=e71]: 124 KB
+          - img [ref=e72]
+    - button "Mark as Complete" [ref=e77] [cursor=pointer]:
+      - img [ref=e78]
+      - text: Mark as Complete
+  - link "← Back to index" [ref=e82] [cursor=pointer]:
+    - /url: ../index.html

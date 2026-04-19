@@ -1,0 +1,89 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner:
+      - paragraph: Edit Quick Picks
+      - generic:
+        - generic:
+          - generic: BJ
+    - main:
+      - generic:
+        - generic:
+          - generic: 🧹
+          - generic: Vacuum
+        - generic:
+          - generic: 🍽️
+          - generic: Dishes
+        - generic:
+          - generic: 🧺
+          - generic: Laundry
+    - navigation:
+      - generic:
+        - img
+        - generic: Home
+      - generic:
+        - img
+        - generic: Calendar
+      - generic:
+        - img
+      - generic:
+        - img
+        - generic: Family
+      - generic:
+        - img
+        - generic: Me
+    - generic [ref=e4]:
+      - heading "Edit Quick Pick ✏️" [level=2] [ref=e6]
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - generic [ref=e9]: Icon
+          - generic [ref=e10]:
+            - combobox [ref=e11]:
+              - option "🧹 Broom / Vacuum" [selected]
+              - option "🍽️ Dishes"
+              - option "🧺 Laundry"
+              - option "🛒 Groceries"
+              - option "🗑️ Trash"
+              - option "🧼 Bathroom"
+              - option "🌿 Plants"
+              - option "🪟 Windows"
+              - option "🐾 Pet Care"
+              - option "🍳 Cooking"
+              - option "🌿 Mowing"
+              - option "👔 Ironing"
+            - generic:
+              - img
+        - generic [ref=e12]:
+          - generic [ref=e13]: Name
+          - textbox [ref=e14]: Vacuum
+        - generic [ref=e15]:
+          - generic [ref=e16]: Default assignee
+          - generic [ref=e17]:
+            - button "B Bean" [ref=e18] [cursor=pointer]:
+              - generic [ref=e20]: B
+              - text: Bean
+            - button "A Alex" [ref=e21] [cursor=pointer]:
+              - generic [ref=e23]: A
+              - text: Alex
+            - button "Anyone" [ref=e24] [cursor=pointer]:
+              - img [ref=e26]
+              - text: Anyone
+        - generic [ref=e31]:
+          - generic [ref=e32]: Urgency (days until due)
+          - generic [ref=e33]:
+            - button "−" [ref=e34] [cursor=pointer]
+            - generic [ref=e35]: 7 days
+            - button "+" [ref=e36] [cursor=pointer]
+          - paragraph [ref=e37]: Task will be flagged urgent 7 days after creation
+      - generic [ref=e38]:
+        - link "Cancel" [ref=e39] [cursor=pointer]:
+          - /url: add-task-edit.html
+          - img [ref=e40]
+          - text: Cancel
+        - button [ref=e43] [cursor=pointer]:
+          - img [ref=e44]
+        - link "Save" [ref=e50] [cursor=pointer]:
+          - /url: add-task-edit.html
+          - img [ref=e51]
+          - text: Save
+  - link "← Back to index" [ref=e54] [cursor=pointer]:
+    - /url: ../index.html

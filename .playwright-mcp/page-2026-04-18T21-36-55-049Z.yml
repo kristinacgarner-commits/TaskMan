@@ -1,0 +1,90 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - paragraph [ref=e7]: Good morning! 🌸
+          - heading "Hey, Bean!" [level=1] [ref=e8]
+        - generic [ref=e10]: BJ
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - paragraph [ref=e13]: Today's progress
+          - paragraph [ref=e14]: 1 / 4 done
+        - paragraph [ref=e17]: 3 chores to go — you've got this! 💪
+    - main [ref=e18]:
+      - generic [ref=e19]:
+        - heading "✨ Your chores" [level=2] [ref=e20]
+        - generic [ref=e21]:
+          - link "🛒 Grocery shopping Overdue — was due yesterday!" [ref=e22] [cursor=pointer]:
+            - /url: task-detail.html
+            - generic [ref=e23]: 🛒
+            - generic [ref=e24]:
+              - paragraph [ref=e25]: Grocery shopping
+              - paragraph [ref=e26]:
+                - img [ref=e27]
+                - text: Overdue — was due yesterday!
+          - link "🧹 Vacuum living room Due today" [ref=e32] [cursor=pointer]:
+            - /url: task-detail.html
+            - generic [ref=e33]: 🧹
+            - generic [ref=e34]:
+              - paragraph [ref=e35]: Vacuum living room
+              - paragraph [ref=e36]:
+                - img [ref=e37]
+                - text: Due today
+          - link "🧺 Do laundry Due tomorrow" [ref=e41] [cursor=pointer]:
+            - /url: task-detail.html
+            - generic [ref=e42]: 🧺
+            - generic [ref=e43]:
+              - paragraph [ref=e44]: Do laundry
+              - paragraph [ref=e45]:
+                - img [ref=e46]
+                - text: Due tomorrow
+          - generic [ref=e50]:
+            - generic [ref=e51]: 🍽️
+            - generic [ref=e52]:
+              - paragraph [ref=e53]: Wash dishes
+              - paragraph [ref=e54]:
+                - img [ref=e55]
+                - text: Completed!
+            - img [ref=e59]
+      - generic [ref=e61]:
+        - heading "🎁 Up for grabs" [level=2] [ref=e62]
+        - paragraph [ref=e63]: Tap "Claim" to add to your list
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - generic [ref=e66]: 🗑️
+            - generic [ref=e67]:
+              - paragraph [ref=e68]: Take out trash
+              - paragraph [ref=e69]: Due today · Unclaimed
+            - button "Claim" [ref=e70] [cursor=pointer]
+          - generic [ref=e71]:
+            - generic [ref=e72]: 🌿
+            - generic [ref=e73]:
+              - paragraph [ref=e74]: Water the plants
+              - paragraph [ref=e75]: Due 20 Apr · Unclaimed
+            - button "Claim" [ref=e76] [cursor=pointer]
+          - generic [ref=e77]:
+            - generic [ref=e78]: 🪟
+            - generic [ref=e79]:
+              - paragraph [ref=e80]: Wipe windows
+              - paragraph [ref=e81]: Due 21 Apr · Unclaimed
+            - button "Claim" [ref=e82] [cursor=pointer]
+    - navigation [ref=e83]:
+      - button "Home" [ref=e84] [cursor=pointer]:
+        - img [ref=e85]
+        - generic [ref=e88]: Home
+      - link "Calendar" [ref=e89] [cursor=pointer]:
+        - /url: calendar.html
+        - img [ref=e90]
+        - generic [ref=e95]: Calendar
+      - link [ref=e96] [cursor=pointer]:
+        - /url: add-task.html
+        - img [ref=e97]
+      - button "Family" [ref=e100] [cursor=pointer]:
+        - img [ref=e101]
+        - generic [ref=e106]: Family
+      - button "Me" [ref=e107] [cursor=pointer]:
+        - img [ref=e108]
+        - generic [ref=e111]: Me
+  - link "← Back to index" [ref=e113] [cursor=pointer]:
+    - /url: ../index.html

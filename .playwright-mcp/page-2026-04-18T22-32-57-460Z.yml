@@ -1,0 +1,11 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e5]: 🏠
+      - heading "TaskMan" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Household chores, together
+    - button "Log in with Google" [ref=e8] [cursor=pointer]:
+      - img [ref=e9]
+      - generic [ref=e14]: Log in with Google
+  - link "← Back to index" [ref=e16] [cursor=pointer]:
+    - /url: ../index.html

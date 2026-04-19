@@ -1,0 +1,65 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner:
+      - paragraph: Edit Quick Picks
+    - main:
+      - generic:
+        - generic:
+          - generic: 🧹
+          - generic: Vacuum
+        - generic:
+          - generic: 🍽️
+          - generic: Dishes
+        - generic:
+          - generic: 🧺
+          - generic: Laundry
+    - generic [ref=e4]:
+      - heading "Edit Quick Pick ✏️" [level=2] [ref=e6]
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - generic [ref=e9]: Icon
+          - generic [ref=e10]:
+            - button "🧹" [ref=e11] [cursor=pointer]
+            - button "🍽️" [ref=e12] [cursor=pointer]
+            - button "🧺" [ref=e13] [cursor=pointer]
+            - button "🛒" [ref=e14] [cursor=pointer]
+            - button "🗑️" [ref=e15] [cursor=pointer]
+            - button "🧼" [ref=e16] [cursor=pointer]
+            - button "🌿" [ref=e17] [cursor=pointer]
+            - button [ref=e18] [cursor=pointer]:
+              - img [ref=e19]
+        - generic [ref=e22]:
+          - generic [ref=e23]: Name
+          - textbox [ref=e24]: Vacuum
+        - generic [ref=e25]:
+          - generic [ref=e26]: Default assignee
+          - generic [ref=e27]:
+            - button "B Bean" [ref=e28] [cursor=pointer]:
+              - generic [ref=e30]: B
+              - text: Bean
+            - button "A Alex" [ref=e31] [cursor=pointer]:
+              - generic [ref=e33]: A
+              - text: Alex
+            - button "Anyone" [ref=e34] [cursor=pointer]:
+              - img [ref=e36]
+              - text: Anyone
+        - generic [ref=e41]:
+          - generic [ref=e42]: Urgency (days until due)
+          - generic [ref=e43]:
+            - button "−" [ref=e44] [cursor=pointer]
+            - generic [ref=e45]: 7 days
+            - button "+" [ref=e46] [cursor=pointer]
+          - paragraph [ref=e47]: Task will be flagged urgent 7 days after creation
+      - generic [ref=e48]:
+        - link "Cancel" [ref=e49] [cursor=pointer]:
+          - /url: add-task-edit.html
+          - img [ref=e50]
+          - text: Cancel
+        - button [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+        - link "Save" [ref=e60] [cursor=pointer]:
+          - /url: add-task-edit.html
+          - img [ref=e61]
+          - text: Save
+  - link "← Back to index" [ref=e64] [cursor=pointer]:
+    - /url: ../index.html

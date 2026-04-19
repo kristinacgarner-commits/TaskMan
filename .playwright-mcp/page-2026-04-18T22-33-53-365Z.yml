@@ -1,0 +1,90 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link [ref=e4] [cursor=pointer]:
+        - /url: add-task.html
+        - img [ref=e5]
+      - heading "Edit Quick Picks" [level=1] [ref=e8]
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: add-task.html
+          - img [ref=e11]
+        - link "BJ" [ref=e13] [cursor=pointer]:
+          - /url: login.html
+          - generic [ref=e14]: BJ
+    - main [ref=e15]:
+      - generic [ref=e16]:
+        - img [ref=e17]
+        - paragraph [ref=e21]: Tap any tile to edit it. Hit ✓ when done.
+      - generic [ref=e22]:
+        - generic:
+          - img
+        - searchbox "Search quick picks…" [ref=e23]
+      - generic [ref=e24]:
+        - link "🧹 Vacuum" [ref=e25] [cursor=pointer]:
+          - /url: add-task-edit-item.html
+          - generic [ref=e26]: 🧹
+          - generic [ref=e27]: Vacuum
+          - img [ref=e29]
+        - link "🍽️ Dishes" [ref=e32] [cursor=pointer]:
+          - /url: add-task-edit-item.html
+          - generic [ref=e33]: 🍽️
+          - generic [ref=e34]: Dishes
+          - img [ref=e36]
+        - link "🧺 Laundry" [ref=e39] [cursor=pointer]:
+          - /url: add-task-edit-item.html
+          - generic [ref=e40]: 🧺
+          - generic [ref=e41]: Laundry
+          - img [ref=e43]
+        - link "🛒 Groceries" [ref=e46] [cursor=pointer]:
+          - /url: add-task-edit-item.html
+          - generic [ref=e47]: 🛒
+          - generic [ref=e48]: Groceries
+          - img [ref=e50]
+        - link "🗑️ Trash" [ref=e53] [cursor=pointer]:
+          - /url: add-task-edit-item.html
+          - generic [ref=e54]: 🗑️
+          - generic [ref=e55]: Trash
+          - img [ref=e57]
+        - link "🧼 Bathroom" [ref=e60] [cursor=pointer]:
+          - /url: add-task-edit-item.html
+          - generic [ref=e61]: 🧼
+          - generic [ref=e62]: Bathroom
+          - img [ref=e64]
+        - link "🌿 Plants" [ref=e67] [cursor=pointer]:
+          - /url: add-task-edit-item.html
+          - generic [ref=e68]: 🌿
+          - generic [ref=e69]: Plants
+          - img [ref=e71]
+        - link "🪟 Windows" [ref=e74] [cursor=pointer]:
+          - /url: add-task-edit-item.html
+          - generic [ref=e75]: 🪟
+          - generic [ref=e76]: Windows
+          - img [ref=e78]
+        - link "🐾 Pet care" [ref=e81] [cursor=pointer]:
+          - /url: add-task-edit-item.html
+          - generic [ref=e82]: 🐾
+          - generic [ref=e83]: Pet care
+          - img [ref=e85]
+      - button "Add new quick pick" [ref=e88] [cursor=pointer]:
+        - img [ref=e89]
+        - text: Add new quick pick
+    - navigation [ref=e93]:
+      - link "Home" [ref=e94] [cursor=pointer]:
+        - /url: home.html
+        - img [ref=e95]
+        - generic [ref=e98]: Home
+      - link "Calendar" [ref=e99] [cursor=pointer]:
+        - /url: calendar.html
+        - img [ref=e100]
+        - generic [ref=e105]: Calendar
+      - img [ref=e107]
+      - button "Family" [ref=e110] [cursor=pointer]:
+        - img [ref=e111]
+        - generic [ref=e116]: Family
+      - link "Me" [ref=e117] [cursor=pointer]:
+        - /url: login.html
+        - img [ref=e118]
+        - generic [ref=e121]: Me
+  - link "← Back to index" [ref=e123] [cursor=pointer]:
+    - /url: ../index.html

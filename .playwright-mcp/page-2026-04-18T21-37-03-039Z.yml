@@ -1,0 +1,108 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link [ref=e4] [cursor=pointer]:
+        - /url: home.html
+        - img [ref=e5]
+      - heading "Add a Chore ✏️" [level=1] [ref=e8]
+    - main [ref=e9]:
+      - generic [ref=e10]:
+        - paragraph [ref=e11]: ⚡ Quick pick
+        - generic [ref=e12]:
+          - button "🧹 Vacuum" [ref=e13] [cursor=pointer]:
+            - generic [ref=e14]: 🧹
+            - generic [ref=e15]: Vacuum
+          - button "🍽️ Dishes" [ref=e16] [cursor=pointer]:
+            - generic [ref=e17]: 🍽️
+            - generic [ref=e18]: Dishes
+          - button "🧺 Laundry" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 🧺
+            - generic [ref=e21]: Laundry
+          - button "🛒 Groceries" [ref=e22] [cursor=pointer]:
+            - generic [ref=e23]: 🛒
+            - generic [ref=e24]: Groceries
+          - button "🗑️ Trash" [ref=e25] [cursor=pointer]:
+            - generic [ref=e26]: 🗑️
+            - generic [ref=e27]: Trash
+          - button "🧼 Bathroom" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29]: 🧼
+            - generic [ref=e30]: Bathroom
+          - button "🌿 Plants" [ref=e31] [cursor=pointer]:
+            - generic [ref=e32]: 🌿
+            - generic [ref=e33]: Plants
+          - button "🪟 Windows" [ref=e34] [cursor=pointer]:
+            - generic [ref=e35]: 🪟
+            - generic [ref=e36]: Windows
+          - button "🐾 Pet care" [ref=e37] [cursor=pointer]:
+            - generic [ref=e38]: 🐾
+            - generic [ref=e39]: Pet care
+      - generic [ref=e42]: or type your own
+      - generic [ref=e44]:
+        - generic [ref=e45]: Chore name
+        - generic [ref=e46]:
+          - generic [ref=e47]: 🧹
+          - textbox [ref=e48]: Vacuum living room
+      - generic [ref=e49]:
+        - generic [ref=e50]: Due date
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - button [ref=e53] [cursor=pointer]:
+              - img [ref=e54]
+            - paragraph [ref=e56]: April 2026
+            - button [ref=e57] [cursor=pointer]:
+              - img [ref=e58]
+          - generic [ref=e60]:
+            - generic [ref=e61]: S
+            - generic [ref=e62]: M
+            - generic [ref=e63]: T
+            - generic [ref=e64]: W
+            - generic [ref=e65]: T
+            - generic [ref=e66]: F
+            - generic [ref=e67]: S
+            - generic [ref=e70]: "1"
+            - generic [ref=e71]: "2"
+            - generic [ref=e72]: "3"
+            - generic [ref=e73]: "4"
+            - generic [ref=e74]: "5"
+            - generic [ref=e75]: "6"
+            - generic [ref=e76]: "7"
+            - generic [ref=e77]: "8"
+            - generic [ref=e78]: "9"
+            - generic [ref=e79]: "10"
+            - generic [ref=e80]: "11"
+            - generic [ref=e81]: "12"
+            - generic [ref=e82]: "13"
+            - generic [ref=e83]: "14"
+            - generic [ref=e84]: "15"
+            - generic [ref=e85]: "16"
+            - generic [ref=e86]: "17"
+            - generic [ref=e87]: "18"
+            - generic [ref=e88]: "19"
+            - generic [ref=e89]: "20"
+            - generic [ref=e90]: "21"
+            - generic [ref=e91]: "22"
+            - generic [ref=e92]: "23"
+            - generic [ref=e93]: "24"
+            - generic [ref=e94]: "25"
+            - generic [ref=e95]: "26"
+            - generic [ref=e96]: "27"
+            - generic [ref=e97]: "28"
+            - generic [ref=e98]: "29"
+            - generic [ref=e99]: "30"
+      - generic [ref=e100]:
+        - generic [ref=e101]: Assign to
+        - generic [ref=e102]:
+          - button "BJ Me (Bean)" [ref=e103] [cursor=pointer]:
+            - generic [ref=e105]: BJ
+            - generic [ref=e106]: Me (Bean)
+          - button "AL Alex" [ref=e107] [cursor=pointer]:
+            - generic [ref=e109]: AL
+            - generic [ref=e110]: Alex
+          - button "Anyone" [ref=e111] [cursor=pointer]:
+            - img [ref=e113]
+            - generic [ref=e118]: Anyone
+    - button "Add Chore 🎉" [ref=e120] [cursor=pointer]:
+      - img [ref=e121]
+      - text: Add Chore 🎉
+  - link "← Back to index" [ref=e126] [cursor=pointer]:
+    - /url: ../index.html

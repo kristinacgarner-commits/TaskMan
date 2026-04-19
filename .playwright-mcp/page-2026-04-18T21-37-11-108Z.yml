@@ -1,0 +1,121 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - heading "Family Calendar 🗓️" [level=1] [ref=e5]
+        - generic [ref=e6]:
+          - button [ref=e7] [cursor=pointer]:
+            - img [ref=e8]
+          - button [ref=e10] [cursor=pointer]:
+            - img [ref=e11]
+      - paragraph [ref=e13]: April 2026
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: Sat
+          - generic [ref=e17]: "18"
+        - generic [ref=e18]:
+          - generic [ref=e19]: Sun
+          - generic [ref=e20]: "19"
+        - generic [ref=e21]:
+          - generic [ref=e22]: Mon
+          - generic [ref=e23]: "20"
+        - generic [ref=e24]:
+          - generic [ref=e25]: Tue
+          - generic [ref=e26]: "21"
+        - generic [ref=e27]:
+          - generic [ref=e28]: Wed
+          - generic [ref=e29]: "22"
+        - generic [ref=e30]:
+          - generic [ref=e31]: Thu
+          - generic [ref=e32]: "23"
+        - generic [ref=e33]:
+          - generic [ref=e34]: Fri
+          - generic [ref=e35]: "24"
+      - generic [ref=e36]:
+        - generic [ref=e39]: Bean
+        - generic [ref=e42]: Alex
+        - generic [ref=e45]: Unclaimed
+    - main [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e50]: "21"
+          - paragraph [ref=e51]: Tuesday, 21 April
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]: 🧹
+            - generic [ref=e55]:
+              - paragraph [ref=e56]: Vacuum living room
+              - paragraph [ref=e57]: Due all day
+            - generic [ref=e60]: B
+          - generic [ref=e61]:
+            - generic [ref=e62]: 🍽️
+            - generic [ref=e63]:
+              - paragraph [ref=e64]: Wash dishes
+              - paragraph [ref=e65]: Due all day
+            - generic [ref=e68]: A
+          - generic [ref=e69]:
+            - generic [ref=e70]: 🗑️
+            - generic [ref=e71]:
+              - paragraph [ref=e72]: Take out trash
+              - paragraph [ref=e73]: Unclaimed — tap to claim!
+            - button "Claim" [ref=e74] [cursor=pointer]
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e78]: "22"
+          - paragraph [ref=e79]: Wednesday, 22 April
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: 🧺
+            - generic [ref=e83]:
+              - paragraph [ref=e84]: Do laundry
+              - paragraph [ref=e85]: Due all day
+            - generic [ref=e87]: A
+          - generic [ref=e88]:
+            - generic [ref=e89]: 🛒
+            - generic [ref=e90]:
+              - paragraph [ref=e91]: Grocery shopping
+              - paragraph [ref=e92]: Due all day
+            - generic [ref=e94]: B
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - generic [ref=e98]: "23"
+          - paragraph [ref=e99]: Thursday, 23 April
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - generic [ref=e102]: 🌿
+            - generic [ref=e103]:
+              - paragraph [ref=e104]: Water the plants
+              - paragraph [ref=e105]: Unclaimed — tap to claim!
+            - button "Claim" [ref=e106] [cursor=pointer]
+          - generic [ref=e107]:
+            - generic [ref=e108]: 🧼
+            - generic [ref=e109]:
+              - paragraph [ref=e110]: Clean bathroom
+              - paragraph [ref=e111]: Due all day
+            - generic [ref=e113]: B
+      - generic [ref=e114]:
+        - generic [ref=e115]:
+          - generic [ref=e117]: "24"
+          - paragraph [ref=e118]: Friday, 24 April
+        - generic [ref=e119]:
+          - paragraph [ref=e120]: 🎉
+          - paragraph [ref=e121]: Nothing due — enjoy the day!
+    - navigation [ref=e122]:
+      - link "Home" [ref=e123] [cursor=pointer]:
+        - /url: home.html
+        - img [ref=e124]
+        - generic [ref=e127]: Home
+      - button "Calendar" [ref=e128] [cursor=pointer]:
+        - img [ref=e129]
+        - generic [ref=e134]: Calendar
+      - link [ref=e135] [cursor=pointer]:
+        - /url: add-task.html
+        - img [ref=e136]
+      - button "Family" [ref=e139] [cursor=pointer]:
+        - img [ref=e140]
+        - generic [ref=e145]: Family
+      - button "Me" [ref=e146] [cursor=pointer]:
+        - img [ref=e147]
+        - generic [ref=e150]: Me
+  - link "← Back to index" [ref=e152] [cursor=pointer]:
+    - /url: ../index.html

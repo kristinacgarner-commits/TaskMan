@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-50 font-sans">
 
-  <div class="max-w-sm mx-auto min-h-screen flex flex-col bg-white shadow-lg">
+  <div class="max-w-sm mx-auto h-screen flex flex-col bg-white shadow-lg">
 
     <!-- Top bar -->
     <header class="flex items-center justify-between px-5 pt-10 pb-4 border-b border-gray-100">
@@ -17,13 +17,18 @@
         <i data-lucide="arrow-left" class="w-4 h-4 text-gray-600"></i>
       </a>
       <span class="text-sm font-semibold text-gray-600">Task Detail</span>
-      <button class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100">
-        <i data-lucide="trash-2" class="w-4 h-4 text-red-400"></i>
-      </button>
+      <div class="flex items-center gap-2">
+        <button class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100">
+          <i data-lucide="trash-2" class="w-4 h-4 text-red-400"></i>
+        </button>
+        <a href="login.html" class="w-9 h-9 rounded-full bg-violet-100 border-2 border-violet-200 flex items-center justify-center">
+          <span class="text-violet-700 font-extrabold text-xs">BJ</span>
+        </a>
+      </div>
     </header>
 
     <!-- Content -->
-    <main class="flex-1 overflow-y-auto px-5 py-5 space-y-6 pb-28">
+    <main class="flex-1 overflow-y-auto px-5 py-5 space-y-6 pb-4">
 
       <!-- Title + completion -->
       <div class="flex items-start gap-3">
@@ -100,12 +105,35 @@
 
     </main>
 
-    <!-- Bottom action -->
-    <div class="absolute bottom-0 left-0 right-0 max-w-sm mx-auto px-5 py-4 bg-white border-t border-gray-100">
-      <button class="w-full bg-indigo-600 text-white font-semibold text-sm py-3.5 rounded-2xl flex items-center justify-center gap-2">
-        <i data-lucide="check-circle" class="w-5 h-5"></i>
-        Mark as Complete
-      </button>
+    <!-- Bottom action + nav -->
+    <div class="flex-shrink-0 z-10 bg-white border-t border-gray-100">
+      <div class="px-5 py-3">
+        <button class="w-full bg-violet-600 text-white font-semibold text-sm py-3.5 rounded-2xl flex items-center justify-center gap-2">
+          <i data-lucide="check-circle" class="w-5 h-5"></i>
+          Mark as Complete
+        </button>
+      </div>
+      <nav class="flex items-center justify-around px-4 py-3 border-t border-gray-100">
+        <a href="home.html" class="flex flex-col items-center gap-1 text-gray-400">
+          <i data-lucide="home" class="w-5 h-5"></i>
+          <span class="text-xs">Home</span>
+        </a>
+        <a href="calendar.html" class="flex flex-col items-center gap-1 text-gray-400">
+          <i data-lucide="calendar" class="w-5 h-5"></i>
+          <span class="text-xs">Calendar</span>
+        </a>
+        <a href="add-task.html" class="w-14 h-14 -mt-7 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg shadow-violet-300 flex-shrink-0">
+          <i data-lucide="plus" class="w-7 h-7 text-white"></i>
+        </a>
+        <button class="flex flex-col items-center gap-1 text-gray-400">
+          <i data-lucide="users" class="w-5 h-5"></i>
+          <span class="text-xs">Family</span>
+        </button>
+        <a href="login.html" class="flex flex-col items-center gap-1 text-gray-400">
+          <i data-lucide="user" class="w-5 h-5"></i>
+          <span class="text-xs">Me</span>
+        </a>
+      </nav>
     </div>
 
   </div>

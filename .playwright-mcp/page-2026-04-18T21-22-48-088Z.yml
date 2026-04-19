@@ -1,0 +1,69 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - paragraph [ref=e6]: Sunday, 18 Apr
+          - heading "My Tasks" [level=1] [ref=e7]
+        - generic [ref=e9]: BJ
+      - generic [ref=e10]:
+        - button "All" [ref=e11] [cursor=pointer]
+        - button "Today" [ref=e12] [cursor=pointer]
+        - button "Upcoming" [ref=e13] [cursor=pointer]
+        - button "Completed" [ref=e14] [cursor=pointer]
+    - main [ref=e15]:
+      - paragraph [ref=e16]: Overdue
+      - link "Submit quarterly report Finance · Due yesterday High" [ref=e17] [cursor=pointer]:
+        - /url: task-detail.html
+        - generic [ref=e18]:
+          - generic [ref=e20]:
+            - paragraph [ref=e21]: Submit quarterly report
+            - paragraph [ref=e22]: Finance · Due yesterday
+          - generic [ref=e23]: High
+      - paragraph [ref=e24]: Today
+      - link "Review pull requests Engineering · Due 5:00 PM Med" [ref=e25] [cursor=pointer]:
+        - /url: task-detail.html
+        - generic [ref=e26]:
+          - generic [ref=e28]:
+            - paragraph [ref=e29]: Review pull requests
+            - paragraph [ref=e30]: Engineering · Due 5:00 PM
+          - generic [ref=e31]: Med
+      - generic [ref=e33]:
+        - img [ref=e35]
+        - generic [ref=e37]:
+          - paragraph [ref=e38]: Morning standup
+          - paragraph [ref=e39]: Engineering · Done
+        - generic [ref=e40]: Low
+      - link "Update onboarding docs HR · No due date Low" [ref=e41] [cursor=pointer]:
+        - /url: task-detail.html
+        - generic [ref=e42]:
+          - generic [ref=e44]:
+            - paragraph [ref=e45]: Update onboarding docs
+            - paragraph [ref=e46]: HR · No due date
+          - generic [ref=e47]: Low
+      - paragraph [ref=e48]: Upcoming
+      - link "Plan team offsite Management · Due 25 Apr Med" [ref=e49] [cursor=pointer]:
+        - /url: task-detail.html
+        - generic [ref=e50]:
+          - generic [ref=e52]:
+            - paragraph [ref=e53]: Plan team offsite
+            - paragraph [ref=e54]: Management · Due 25 Apr
+          - generic [ref=e55]: Med
+    - navigation [ref=e56]:
+      - button "Tasks" [ref=e57] [cursor=pointer]:
+        - img [ref=e58]
+        - generic [ref=e63]: Tasks
+      - button "Calendar" [ref=e64] [cursor=pointer]:
+        - img [ref=e65]
+        - generic [ref=e70]: Calendar
+      - link [ref=e71] [cursor=pointer]:
+        - /url: add-task.html
+        - img [ref=e72]
+      - button "Stats" [ref=e75] [cursor=pointer]:
+        - img [ref=e76]
+        - generic [ref=e80]: Stats
+      - button "Settings" [ref=e81] [cursor=pointer]:
+        - img [ref=e82]
+        - generic [ref=e85]: Settings
+  - link "← Back to index" [ref=e87] [cursor=pointer]:
+    - /url: ../index.html

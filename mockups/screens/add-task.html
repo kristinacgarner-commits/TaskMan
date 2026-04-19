@@ -8,7 +8,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-violet-50 font-sans">
-<div class="max-w-sm mx-auto min-h-screen flex flex-col bg-violet-50">
+<div class="max-w-sm mx-auto h-screen flex flex-col bg-violet-50">
 
   <!-- Header -->
   <header class="flex items-center justify-between px-5 pt-12 pb-4 bg-white rounded-b-3xl shadow-sm">
@@ -16,14 +16,28 @@
       <i data-lucide="arrow-left" class="w-4 h-4 text-violet-600"></i>
     </a>
     <h1 class="text-base font-extrabold text-gray-800">Add a Chore ✏️</h1>
-    <div class="w-10"></div>
+    <div class="flex items-center gap-2">
+      <a href="add-task-edit.html" class="w-10 h-10 flex items-center justify-center rounded-2xl bg-violet-100">
+        <i data-lucide="pencil" class="w-4 h-4 text-violet-600"></i>
+      </a>
+      <a href="login.html" class="w-10 h-10 rounded-full bg-violet-100 border-2 border-violet-200 flex items-center justify-center">
+        <span class="text-violet-700 font-extrabold text-xs">BJ</span>
+      </a>
+    </div>
   </header>
 
-  <main class="flex-1 overflow-y-auto px-5 py-5 space-y-6 pb-32">
+  <main class="flex-1 overflow-y-auto px-5 py-5 space-y-6 pb-4">
 
     <!-- Quick pick -->
     <section>
       <p class="text-xs font-extrabold text-violet-500 uppercase tracking-widest mb-3">⚡ Quick pick</p>
+      <!-- Search -->
+      <div class="relative mb-3">
+        <div class="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">
+          <i data-lucide="search" class="w-4 h-4 text-violet-400"></i>
+        </div>
+        <input type="search" placeholder="Search quick picks…" class="w-full bg-white border border-violet-200 rounded-2xl pl-9 pr-4 py-2.5 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-violet-400" />
+      </div>
       <div class="grid grid-cols-3 gap-2">
         <button class="flex flex-col items-center gap-1.5 bg-white rounded-3xl py-4 px-2 shadow-sm border-2 border-violet-300">
           <span class="text-2xl">🧹</span>
@@ -33,9 +47,13 @@
           <span class="text-2xl">🍽️</span>
           <span class="text-xs font-bold text-gray-700 text-center leading-tight">Dishes</span>
         </button>
-        <button class="flex flex-col items-center gap-1.5 bg-white rounded-3xl py-4 px-2 shadow-sm border border-gray-100">
-          <span class="text-2xl">🧺</span>
-          <span class="text-xs font-bold text-gray-700 text-center leading-tight">Laundry</span>
+        <!-- Greyed out: already scheduled today -->
+        <button disabled class="relative flex flex-col items-center gap-1.5 bg-gray-100 rounded-3xl py-4 px-2 shadow-sm border border-gray-200 opacity-60 cursor-not-allowed">
+          <span class="text-2xl grayscale">🧺</span>
+          <span class="text-xs font-bold text-gray-400 text-center leading-tight">Laundry</span>
+          <div class="absolute top-2 right-2 w-4 h-4 bg-green-400 rounded-full flex items-center justify-center">
+            <i data-lucide="check" class="w-2.5 h-2.5 text-white"></i>
+          </div>
         </button>
         <button class="flex flex-col items-center gap-1.5 bg-white rounded-3xl py-4 px-2 shadow-sm border border-gray-100">
           <span class="text-2xl">🛒</span>
@@ -176,12 +194,35 @@
 
   </main>
 
-  <!-- Submit -->
-  <div class="absolute bottom-0 left-0 right-0 max-w-sm mx-auto px-5 py-4 bg-white border-t border-gray-100">
-    <button class="w-full bg-gradient-to-r from-violet-500 to-purple-600 text-white font-extrabold text-sm py-4 rounded-3xl flex items-center justify-center gap-2 shadow-lg shadow-violet-200">
-      <i data-lucide="plus-circle" class="w-5 h-5"></i>
-      Add Chore 🎉
-    </button>
+  <!-- Submit + nav -->
+  <div class="flex-shrink-0 z-10 bg-white border-t border-gray-100">
+    <div class="px-5 py-3">
+      <button class="w-full bg-gradient-to-r from-violet-500 to-purple-600 text-white font-extrabold text-sm py-4 rounded-3xl flex items-center justify-center gap-2 shadow-lg shadow-violet-200">
+        <i data-lucide="plus-circle" class="w-5 h-5"></i>
+        Add Chore 🎉
+      </button>
+    </div>
+    <nav class="flex items-center justify-around px-4 py-3 border-t border-gray-100">
+      <a href="home.html" class="flex flex-col items-center gap-1 text-gray-400">
+        <i data-lucide="home" class="w-5 h-5"></i>
+        <span class="text-xs">Home</span>
+      </a>
+      <a href="calendar.html" class="flex flex-col items-center gap-1 text-gray-400">
+        <i data-lucide="calendar" class="w-5 h-5"></i>
+        <span class="text-xs">Calendar</span>
+      </a>
+      <div class="w-14 h-14 -mt-7 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg shadow-violet-300 flex-shrink-0">
+        <i data-lucide="plus" class="w-7 h-7 text-white"></i>
+      </div>
+      <button class="flex flex-col items-center gap-1 text-gray-400">
+        <i data-lucide="users" class="w-5 h-5"></i>
+        <span class="text-xs">Family</span>
+      </button>
+      <a href="login.html" class="flex flex-col items-center gap-1 text-gray-400">
+        <i data-lucide="user" class="w-5 h-5"></i>
+        <span class="text-xs">Me</span>
+      </a>
+    </nav>
   </div>
 
 </div>
